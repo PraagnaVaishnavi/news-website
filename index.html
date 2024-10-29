@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+        <nav><div class="main-nav flex">
+             <a href="#" onclick="reload()
+             ">
+                <img  id="img" src="img.jpeg" alt=".logo">
+             </a>
+       <div class="nav-links flex container"> <ul class="flex"> 
+            <li class="hover-links" id="politics" onclick="fetchData('politics')">Politics</li>
+            <li class="hover-links" id="science" onclick="navclick('science')">Science</li>
+            <li class="hover-links" id="sports" onclick="navclick('sports')">Sports</li>
+        </ul>
+    </div>
+    <div class="search">
+        <input type="text" name="" id="searchbar" placeholder="eg sports"></div>
+       <button id="searchbtn">search</button>
+    </div>
+    </nav>
+   <main>
+      <div class="card-cont flex container" id="cards-container">
+        
+        </div>
+       
+    </main> 
+    <template id="template-cards">
+        <div class="card">
+            <div class="cardhead"><img  src="https://via.placeholder.com/400x200" alt="new-img" height=400px id="newsimg">
+            </div>
+            <div class="cardcontent">
+                <h4 id="news-title">title</h4>
+                <h5 class="newsdet" id="newsdet">date</h5>
+                <p class="content-para" id="content-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos numquam odit eveniet aperiam autem 
+                    dicta at, eum fuga accusamus quibusdam, quam ad voluptas rerum laborum asperiores! Soluta unde
+                     numquam quam!</p>
+            </div>
+        </div>
+      
+      </template>
+    <script src="script.js"></script>
+</body>
+</html>
